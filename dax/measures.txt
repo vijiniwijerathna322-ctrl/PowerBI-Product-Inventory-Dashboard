@@ -1,0 +1,17 @@
+Total Products =
+COUNTROWS(products)
+
+Total Inventory Value =
+SUM(products[Inventory Value])
+
+Average Price =
+AVERAGE(products[Price])
+
+Average Rating =
+AVERAGE(products[Product Rating])
+
+Low Stock Products =
+CALCULATE(
+    COUNTROWS(products),
+    products[Stock Status] = "Low"
+)
